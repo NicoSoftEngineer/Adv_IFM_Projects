@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.letter-box {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.present {
+    background-color: yellow;
+    color: black;
+}
+
+.absent {
+    background-color: grey;
+    color: white;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+#message {
+    font-size: 18px;
+    font-weight: bold;
+}
